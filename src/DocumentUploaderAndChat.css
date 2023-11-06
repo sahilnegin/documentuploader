@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(113, 104, 104);
+}
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Optional: To center vertically */
+}
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+/* .chat-bar {
+    margin-top: 250px; /* Add margin to push the chatbar up */
+   */
+  .file-label {
+    background-color: #4f555d;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  button {
+    background-color: #5a5f64;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for the "Chat Bar" section */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rest of your CSS styles... */
+  .chatbaricon{
+    margin-top: 250px;
+  }
+  .chat-bar {
+    display: flex; 
+    align-items: center; 
+    margin-top: 300px;
+    justify-content: space-between;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    flex: 1; /* Allow the input to grow and take available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Add some space between the input and button */
+  }
+  
+  button {
+    background-color: #38414b;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #36383b;
+  }
+
+.para {
+  text-align: center; /* Center the content horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+/* DocumentUploaderAndChat.css */
+.icon-button {
+  background-color: #36383b;
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 45px; /* Adjust the height as needed to center the icon */
+}
+
+.icon {
+  height: 20px; 
+  margin-right: 5px;
+}
