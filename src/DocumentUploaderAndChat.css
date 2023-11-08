@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import 'normalize.css';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @supports (display: grid) {
   .grid-container {
     display: grid;
   }
 }
 .example {
-  -webkit-border-radius: 10px; /* For WebKit-based browsers (e.g., Chrome, Safari) */
-  border-radius: 10px; /* Standard property */
+  -webkit-border-radius: 10px;
+  border-radius: 10px; 
 }
 * {
   margin: 0;
