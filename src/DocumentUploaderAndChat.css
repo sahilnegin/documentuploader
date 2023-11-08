@@ -1,27 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import 'normalize.css';
+@supports (display: grid) {
+  .grid-container {
+    display: grid;
+  }
+}
+.example {
+  -webkit-border-radius: 10px; /* For WebKit-based browsers (e.g., Chrome, Safari) */
+  border-radius: 10px; /* Standard property */
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
-body {
+body,html {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(113, 104, 104);
+  background-color: #2a2d35;
+  height: 100%;
 }
 .center-content {
+  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh; /* Optional: To center vertically */
+  height: 15vh; 
 }
 h2 {
     font-size: 20px;
     margin-bottom: 10px;
   }
-/* .chat-bar {
-    margin-top: 250px; /* Add margin to push the chatbar up */
-   */
   .file-label {
     background-color: #4f555d;
     color: #fff;
@@ -36,7 +44,7 @@ h2 {
   }
   
   button {
-    background-color: #5a5f64;
+    background-color:#2a2d35;
     color: #fff;
     padding: 10px 10px;
     border: none;
@@ -45,10 +53,10 @@ h2 {
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #2a2d35;
   }
   
-  /* Styles for the "Chat Bar" section */
+  
   input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -61,13 +69,24 @@ h2 {
   .chatbaricon{
     margin-top: 250px;
   }
-  .chat-bar {
+  /* .chat-bar {
     display: flex; 
     align-items: center; 
-    margin-top: 300px;
+    margin-top: 430px;
     justify-content: space-between;
+  } */
+  .chat-bar {
+    position: fixed;
+    bottom: 0; /* Keep the chat-bar at the bottom of the page */
+    left: 0;
+    right: 0; /* Make it stretch across the page */
+    background-color: #26282d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
   }
-  
   h2 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -80,10 +99,14 @@ h2 {
     border-radius: 5px;
     margin-right: 10px; /* Add some space between the input and button */
   }
-  
+.buttondocument{
+  background-color:#26282d;
+}
+
+
   button {
-    background-color: #38414b;
-    color: #fff;
+    background-color:#2a2d35;
+    color: #dbbbbb;
     padding: 10px 10px 10px 10px;
     border: none;
     border-radius: 6px;
@@ -94,27 +117,46 @@ h2 {
     background-color: #36383b;
   }
 
-.para {
-  text-align: center; /* Center the content horizontally */
+/* .para {
+  text-align: center; 
   display: flex;
   justify-content: center;
   align-items: center; 
+} */
+.para {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #26282d;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 /* DocumentUploaderAndChat.css */
 .icon-button {
-  background-color: #36383b;
+  background-color: #393f4e;
   color: #fff;
-  padding: 20px 20px 20px 20px;
-  border: none;
+  padding: 20px 20px 15px 20px;
   border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   cursor: pointer;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 45px; /* Adjust the height as needed to center the icon */
+  height: 50px; 
+
 }
 
 .icon {
   height: 20px; 
   margin-right: 5px;
+}
+.chatcolor{
+  background-color: #2d2e30;
+  height: 100px;
+}
+.bot-message {
+  color: rgb(159, 159, 172);
 }
