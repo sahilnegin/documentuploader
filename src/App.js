@@ -2,7 +2,7 @@
 import React from 'react';
 import DocumentUploaderAndChat from './DocumentUploaderAndChat';
 import './DocumentUploaderAndChat.css';
-
+import 'normalize.css';
 function App() {
   return (
     <div className="App">

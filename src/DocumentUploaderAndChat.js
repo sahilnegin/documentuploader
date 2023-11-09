@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DocumentUploaderAndChat.css';
-
+import 'normalize.css';
 function DocumentUploaderAndChat() {
   const [selectedDocument, setSelectedDocument] = useState(null);
   const [prompt, setPrompt] = useState('');
