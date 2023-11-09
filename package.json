@@ -9,7 +9,7 @@
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4",
     "webkit": "^0.0.0"
   },
@@ -38,11 +38,10 @@
     ]
   },
   "devDependencies": {
-    "webpack": "^5.89.0",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/dom": "^9.3.3",
     "tsutils": "^3.21.0",
-    "typescript": "^5.2.2"
+    "typescript": "^3.2.1",
+    "webpack": "^5.89.0"
   }
 }
-
