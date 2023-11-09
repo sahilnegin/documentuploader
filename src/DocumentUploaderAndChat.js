@@ -77,13 +77,13 @@ function DocumentUploaderAndChat() {
     }
   };
 
-  const handleStartChat = () => {
-    if (prompt) {
-      setChatHistory([...chatHistory, { text: prompt, isUser: true }]);
-      setPrompt('');
-    }
-    setIsChatActive(!isChatActive);
-  };
+  // const handleStartChat = () => {
+  //   if (prompt) {
+  //     setChatHistory([...chatHistory, { text: prompt, isUser: true }]);
+  //     setPrompt('');
+  //   }
+  //   setIsChatActive(!isChatActive);
+  // };
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
